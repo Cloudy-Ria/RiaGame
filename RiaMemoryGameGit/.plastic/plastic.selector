@@ -1,0 +1,4 @@
+repository "RiaMemoryGame/RiaMemoryGame@10170772300493@cloud"
+  path "/"
+    br "/main"
+    co "/main"

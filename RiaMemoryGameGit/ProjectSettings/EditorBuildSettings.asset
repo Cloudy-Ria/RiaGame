@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Hometown_01.unity
+    guid: 0028c48064acd8c4fab42c83aa2da361
+  - enabled: 1
+    path: Assets/Scenes/Hometown_02.unity
+    guid: c621e576945f5d043bd32a902e1dcbfa
+  - enabled: 1
+    path: Assets/Scenes/LeftRuins_Arena_01.unity
+    guid: ceb4468247313514cb7c8f369b495867
+  - enabled: 1
+    path: Assets/Scenes/LeftRuins_Arena_02.unity
+    guid: aa918e99e498b0a42ae532e9a3413c2c
+  - enabled: 1
+    path: Assets/Scenes/LeftRuins_Key_01.unity
+    guid: 3772d60a6b0d12c48ace865d6013691f
+  - enabled: 1
+    path: Assets/Scenes/LeftRuins_Key_02.unity
+    guid: 0df38f7af05a4284e8ec8e6c15c343f3
+  - enabled: 1
+    path: Assets/Scenes/LeftRuins_Tutorial_01.unity
+    guid: 5ab0987317e355e4dac062f893a9f3ec
+  - enabled: 1
+    path: Assets/Scenes/LeftRuins_Tutorial_02.unity
+    guid: cdb67ab138c73f0428e091224ffaef9a
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_BigJump_01.unity
+    guid: 4c153a081cbcaf345a14ab7be61b5bdf
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_BigJump_02.unity
+    guid: 5e2a4f8fe08d11340acf4e9b1c00ab4d
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_Camera_01.unity
+    guid: f3ecc32ed39e88c4a967dfa9cff7bad0
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_Camera_02.unity
+    guid: 19b2980b2e308174eb74710b378cf504
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_Diverge_01.unity
+    guid: fb9bef83ea6a9ed448c8057023f01c06
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_Diverge_02.unity
+    guid: abcf389a969febf469db39ec006e7305
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_Sofa_01.unity
+    guid: 268a8b76ce41d334a8e049bcdf35f5b4
+  - enabled: 1
+    path: Assets/Scenes/RightRuins_Sofa_02.unity
+    guid: e3d9f39c60e9c0842825020a2b7a96ba
+  - enabled: 1
+    path: Assets/Scenes/SampleScene_01.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/TemplateScene_01.unity
+    guid: 31bb1f332278a3248944317f8d752b6d
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 73a63598efbfb5944b35fc9fa03342f9,
+      type: 3}
+  m_UseUCBPForAssetBundles: 0

@@ -1,0 +1,1017 @@
+fileFormatVersion: 2
+guid: 42922f4afed176c4ebcb0ae6fa7785f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_01
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1695
+        width: 253
+        height: 353
+      alignment: 9
+      pivot: {x: 0.5217391, y: 0.5439094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e1a027f03244a4785b80c3fde38b27
+      internalID: -1262648234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_02
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 415
+        width: 210
+        height: 284
+      alignment: 9
+      pivot: {x: 0.552381, y: 0.6760563}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e83524ee0f99b4898f4cdf60a5bcf9
+      internalID: 1687090690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_03
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 0
+        width: 378
+        height: 129
+      alignment: 9
+      pivot: {x: 0.4920635, y: 1.4883721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0b1d892a5900b43ad826e853e88499
+      internalID: -2078343339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_04
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 384
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 1.8285714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a47ac1da0cf19349a12d0c7cf379b9c
+      internalID: -2035187227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundBlock_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 164
+        height: 347
+      alignment: 9
+      pivot: {x: 0.2987805, y: 0.55331415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8cc18f579914640b6d0ac3ad0bbfb8
+      internalID: 557931971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_01
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1162
+        width: 150
+        height: 356
+      alignment: 9
+      pivot: {x: 0.48666668, y: 0.53932583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f1d66bc269028489a9277fe408c9f4
+      internalID: -1020928556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_01
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1708
+        width: 280
+        height: 340
+      alignment: 9
+      pivot: {x: 0.3642857, y: 0.5617647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aba105b8e3eea418423b84aa374149
+      internalID: -1489483546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_02
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1470
+        width: 217
+        height: 371
+      alignment: 9
+      pivot: {x: 0.3640553, y: 0.49595687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1694d667601a4444da457dd22ec6eda8
+      internalID: 1731424696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_03
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1294
+        width: 200
+        height: 369
+      alignment: 9
+      pivot: {x: 0.285, y: 0.49322492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c1522751b992f4bb08c03d629071ea
+      internalID: -445551509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_04
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1443
+        width: 207
+        height: 372
+      alignment: 9
+      pivot: {x: 0.2753623, y: 0.48924732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34aeacab6e0abb945a73bf04922b643e
+      internalID: 396630305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_05
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 0
+        width: 202
+        height: 324
+      alignment: 9
+      pivot: {x: 0.4108911, y: 0.58950615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3756f5bd5d176c64594594883eb73d73
+      internalID: 1668086176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpBlock_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 746
+        width: 189
+        height: 344
+      alignment: 9
+      pivot: {x: 0.3015873, y: 0.45639536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27d6a0c745303546892b7857809c419
+      internalID: 1801692785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpshot_01
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 698
+        width: 144
+        height: 369
+      alignment: 9
+      pivot: {x: 0.36805555, y: 0.501355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36466b5d6a142244095e732c2bfe649c
+      internalID: -699758421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpshot_02
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1701
+        width: 282
+        height: 347
+      alignment: 9
+      pivot: {x: 0.34397164, y: 0.44668588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d84b6a80213f1d45a2e94c253ddd8de
+      internalID: -1617935860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpshot_03
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 1051
+        width: 175
+        height: 361
+      alignment: 9
+      pivot: {x: 0.37142858, y: 0.51246536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69da29f4d9751640972e5ad6cc1eb4d
+      internalID: 299397459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pogo_01
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1108
+        width: 191
+        height: 361
+      alignment: 9
+      pivot: {x: 0.28795812, y: 0.50138503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045e9d10fa8a85f4da51ae00c5b9922c
+      internalID: -1294168086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pogo_02
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1291
+        width: 192
+        height: 379
+      alignment: 9
+      pivot: {x: 0.40104166, y: 0.5013193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099fc2338a466be439e99cca44e3ea3d
+      internalID: 2018363723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pogo_04
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1340
+        width: 191
+        height: 368
+      alignment: 9
+      pivot: {x: 0.38219896, y: 0.5054348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d58dd011753bf4cb0469d0c2a20b42
+      internalID: 1309582217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pogo_05
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1075
+        width: 191
+        height: 361
+      alignment: 9
+      pivot: {x: 0.28795812, y: 0.50138503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d6a9ac7dd2951499a67cefed4ca2fb
+      internalID: 998538485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideShot_01
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1074
+        width: 180
+        height: 358
+      alignment: 9
+      pivot: {x: 0.34444445, y: 0.53072625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be35b6cf903fe6944b68a8e93ae57efe
+      internalID: 1138108529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideShot_02
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1701
+        width: 282
+        height: 347
+      alignment: 9
+      pivot: {x: 0.34397164, y: 0.44668588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2ddd847a8e100469ae06b1cdbb315f
+      internalID: 1521628433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideShot_03
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1469
+        width: 206
+        height: 349
+      alignment: 9
+      pivot: {x: 0.407767, y: 0.55014324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4e522abca452e44af8b57f04b90608
+      internalID: 1757417493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spell_01
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 0
+        width: 184
+        height: 339
+      alignment: 9
+      pivot: {x: 0.41847825, y: 0.56342185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61176fc2cd649cd42a7d2b41b172031e
+      internalID: -956264701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spell_02
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1733
+        width: 307
+        height: 315
+      alignment: 9
+      pivot: {x: 0.37459284, y: 0.5619048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a93d771e629564faa9075a5651ed4e
+      internalID: 1166439296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spell_03
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1708
+        width: 272
+        height: 340
+      alignment: 9
+      pivot: {x: 0.48161766, y: 0.43823528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadc8647fb757a64297144a17b4408a4
+      internalID: -2011328122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spell_04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1677
+        width: 274
+        height: 371
+      alignment: 9
+      pivot: {x: 0.4489051, y: 0.49865228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938f5146e740a0e4fbab7c5b87ffa5dc
+      internalID: -1107222376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spell_06
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 783
+        width: 200
+        height: 291
+      alignment: 9
+      pivot: {x: 0.45, y: 0.5704467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4f83f5168e310419d714bb114d68c7
+      internalID: -2087525657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Think_01
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 767
+        width: 147
+        height: 355
+      alignment: 9
+      pivot: {x: 0.49659863, y: 0.53521127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d29885fbb48fd8429bf373203f35cb0
+      internalID: -1899305815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Think_02
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1681
+        width: 224
+        height: 367
+      alignment: 9
+      pivot: {x: 0.6160714, y: 0.52316076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7337012da385a40a0c299981d32c56
+      internalID: 385018943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Think_03
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1334
+        width: 204
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5392157, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95af205d547ee85419f10439268a30e6
+      internalID: 776050047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1436
+        width: 199
+        height: 354
+      alignment: 9
+      pivot: {x: 0.52261305, y: 0.53672314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabd04a87eb333e4e9c2b5ece754d418
+      internalID: 463821805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0002
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1108
+        width: 196
+        height: 359
+      alignment: 9
+      pivot: {x: 0.63265306, y: 0.53203344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfdd92f589594c44ba8569dc60ba1ce
+      internalID: -656805943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0003
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 151
+        height: 366
+      alignment: 9
+      pivot: {x: 0.615894, y: 0.52459013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0eaffde166cabf4e817925e66fdc1ef
+      internalID: -159298466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0004
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1097
+        width: 166
+        height: 380
+      alignment: 9
+      pivot: {x: 0.5120482, y: 0.5026316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03635e6d8ab4fe4c85469e8f35f16b7
+      internalID: -1591229151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0005
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1245
+        width: 220
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5863636, y: 0.52459013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251213cd989e075478c50ea258d87660
+      internalID: 1429118405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0006
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1120
+        width: 197
+        height: 356
+      alignment: 9
+      pivot: {x: 0.6345178, y: 0.53651685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bf10b37ee0cd84aa35aa37e98fd206
+      internalID: 939756483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0007
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 149
+        height: 363
+      alignment: 9
+      pivot: {x: 0.5771812, y: 0.5289256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6b0ecee9dda3e489e1fe4ca61ef940
+      internalID: -2094186247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle_0008
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 157
+        height: 366
+      alignment: 9
+      pivot: {x: 0.48407644, y: 0.5218579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311894789fb5d7145842020c8e4befea
+      internalID: -1479468417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 29d812331f891d448bfb3e54aa0017c9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Death_01: -1262648234
+      Death_02: 1687090690
+      Death_03: -2078343339
+      Death_04: -2035187227
+      GroundBlock_01: 557931971
+      Idle_01: -1020928556
+      JumpBlock_01: 1801692785
+      Jump_01: -1489483546
+      Jump_02: 1731424696
+      Jump_03: -445551509
+      Jump_04: 396630305
+      Jump_05: 1668086176
+      Jumpshot_01: -699758421
+      Jumpshot_02: -1617935860
+      Jumpshot_03: 299397459
+      Pogo_01: -1294168086
+      Pogo_02: 2018363723
+      Pogo_04: 1309582217
+      Pogo_05: 998538485
+      SideShot_01: 1138108529
+      SideShot_02: 1521628433
+      SideShot_03: 1757417493
+      Spell_01: -956264701
+      Spell_02: 1166439296
+      Spell_03: -2011328122
+      Spell_04: -1107222376
+      Spell_06: -2087525657
+      Think_01: -1899305815
+      Think_02: 385018943
+      Think_03: 776050047
+      WalkCycle_0001: 463821805
+      WalkCycle_0002: -656805943
+      WalkCycle_0003: -159298466
+      WalkCycle_0004: -1591229151
+      WalkCycle_0005: 1429118405
+      WalkCycle_0006: 939756483
+      WalkCycle_0007: -2094186247
+      WalkCycle_0008: -1479468417
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
