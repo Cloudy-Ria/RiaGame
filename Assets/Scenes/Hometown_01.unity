@@ -195,6 +195,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 85328142428991303, guid: 027c60806bb02b24b9391712f091bc46,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183502875520755481, guid: 027c60806bb02b24b9391712f091bc46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2046768626244814524, guid: 027c60806bb02b24b9391712f091bc46,
         type: 3}
       propertyPath: m_Pivot.x
@@ -682,6 +692,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5802944096702907154, guid: a79813bb5449f5b46aab40ae5ee39e38,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.51079136
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802944096702907154, guid: a79813bb5449f5b46aab40ae5ee39e38,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5369318
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802944096702907154, guid: a79813bb5449f5b46aab40ae5ee39e38,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802944096702907154, guid: a79813bb5449f5b46aab40ae5ee39e38,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179847493908367675, guid: a79813bb5449f5b46aab40ae5ee39e38,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1069818123, guid: 42922f4afed176c4ebcb0ae6fa7785f9,
+        type: 3}
     - target: {fileID: 8355747893549350679, guid: a79813bb5449f5b46aab40ae5ee39e38,
         type: 3}
       propertyPath: HealthUI

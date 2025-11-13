@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private int grounded = 0;
     private float bufferedJump = Mathf.Infinity;
     [SerializeField] private float bufferedJumpMax = 0.2f;
-    public int moveable;
+    private int moveable; //0 = true. Please use ++ and -- to change values.
     private bool jumpInputReleased = true;
     GameState gameState;
 
@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthManager = GetComponent<HealthManager>();
+        sprite.flipX = gameState.flipX;
 
 
         if (gameState.maxHealth != 0)
@@ -53,11 +54,13 @@ public class PlayerController : MonoBehaviour
             healthManager.maxHealth = gameState.maxHealth;
             healthManager.currentHealth = gameState.currentHealth;
         }
+        moveable = 1;
+        animator.enabled = false;
+        StartCoroutine(gameState.SceneFadeIn());
 
     }
     void Start()
     {
-        moveable = 0;
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
         
@@ -177,6 +180,15 @@ public class PlayerController : MonoBehaviour
         //GameObject overlay = GameObject.Find("/PlayerInterface/DeathOverlay");
         //overlay.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         StartCoroutine(gameState.RespawnPlayer(1));
+    }
+
+    public void DontMove()
+    {
+        moveable++;
+    }
+    public void DoMove()
+    {
+        moveable--;
     }
 
 }
