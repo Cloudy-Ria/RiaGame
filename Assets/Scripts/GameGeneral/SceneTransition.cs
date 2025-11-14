@@ -14,10 +14,12 @@ public class SceneTransition : MonoBehaviour
     private string sceneFullName;
     public string transitionType; //Only set when there are multiple transitions between the same two rooms
     private GameState gameState;
+    private SceneBlackout sceneBlackout;
 
     private void Start()
     {
         gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        sceneBlackout = GameObject.Find("Blackout").GetComponent<SceneBlackout>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,15 +48,10 @@ public class SceneTransition : MonoBehaviour
         //Scene loading
         var newScene = SceneManager.LoadSceneAsync(gameState.GetSceneIteration(sceneName));
         newScene.allowSceneActivation = false;
-        float t = 0;
 
-        while (newScene.progress < 0.9f || t < 1)
-        {
-            t += Time.deltaTime*4;
-            t = Mathf.Clamp01(t);
-            gameState.blackoutAlpha = t;
-            yield return null;
-        }
+        sceneBlackout.FadeTo(1);
+        yield return new WaitForSeconds(SceneBlackout.immovableTime);
+        sceneBlackout.SetTo(1);
 
         gameState.SceneLoadInProgress = false;
         newScene.allowSceneActivation = true;

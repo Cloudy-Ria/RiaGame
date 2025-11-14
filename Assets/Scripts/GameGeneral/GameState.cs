@@ -9,6 +9,9 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class GameState : MonoBehaviour
 {
+    GameObject bgMusic;
+    GameObject battleMusic;
+    public float masterVolume = 1f;
     public Dictionary<string, int> itemsRiaMemory;
     public Dictionary<string, int> sceneIterations;
     public Dictionary<string, int> targetSceneIteration;
@@ -22,13 +25,11 @@ public class GameState : MonoBehaviour
 
     public string spawnPointName;
     public string transitionType;
-    public float blackoutAlpha;
     
     public bool SceneLoadInProgress = false;
     
     void Awake()
     {
-        blackoutAlpha = 1.0f;
         itemsRiaMemory = new Dictionary<string, int>()
         {
             { "key", -1 },
@@ -56,6 +57,12 @@ public class GameState : MonoBehaviour
                 sceneIterations[scenes[i]] ++;
             }
         }
+    }
+
+    private void Start()
+    {
+        bgMusic = this.gameObject.transform.Find("BackgroundMusic").gameObject;
+        battleMusic = this.gameObject.transform.Find("BattleMusic").gameObject;
     }
 
     public string GetSceneIteration(string sceneName)
@@ -117,21 +124,26 @@ public class GameState : MonoBehaviour
         currentSceneName = currentSceneName.Substring(0, currentSceneName.Length - 3);
         var gameState = GameObject.Find("GameState").GetComponent<GameState>();
         var player = GameObject.Find("Player");
+        var sceneBlackout = GameObject.Find("Blackout").GetComponent<SceneBlackout>();
 
-        float t = 0;
-
-        while (t < 1)
+        bgMusic.GetComponent<BackgroundMusic>().UpdatePlayer();
+        battleMusic.GetComponent<BackgroundMusic>().UpdatePlayer();
+        if (currentSceneName.Contains("Arena"))
         {
-            t += Time.deltaTime * 4;
-            t = Mathf.Clamp01(t);
-            gameState.blackoutAlpha = 1-t;
-            yield return null;
+            bgMusic.SetActive(false);
+            battleMusic.SetActive(true);
         }
-        gameState.blackoutAlpha = 0;
+        else if (!bgMusic.activeSelf){
+            bgMusic.SetActive(true);
+            battleMusic.SetActive(false);
+        }
 
+            sceneBlackout.SetTo(1);
+        sceneBlackout.FadeTo(0);
+        yield return new WaitForSeconds(SceneBlackout.immovableTime);
+
+       //Enable player movement
         player.GetComponent<Animator>().enabled = true;
-
-
         if (fixedRiaMemory)
         {
             if (!scenePhotosTaken[currentSceneName])

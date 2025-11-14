@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private int grounded = 0;
     private float bufferedJump = Mathf.Infinity;
     [SerializeField] private float bufferedJumpMax = 0.2f;
-    private int moveable; //0 = true. Please use ++ and -- to change values.
+    public int moveable; //0 = true. Please use ++ and -- to change values.
     private bool jumpInputReleased = true;
     GameState gameState;
 
@@ -56,14 +56,15 @@ public class PlayerController : MonoBehaviour
         }
         moveable = 1;
         animator.enabled = false;
-        StartCoroutine(gameState.SceneFadeIn());
+        
 
     }
     void Start()
     {
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
-        
+        StartCoroutine(gameState.SceneFadeIn());
+
     }
 
     void Update()
