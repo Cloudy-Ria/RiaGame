@@ -5,17 +5,25 @@ public class CameraMovement : MonoBehaviour
     private Bounds cameraBounds;
     private Vector3 targetPosition;
     private Camera _camera;
+    public float minX;
+    public float maxX;
+    public float minY;
+    public float maxY;
+    public float height;
+    public float width;
+
     void Start()
     {
         _camera = GetComponent<Camera>();
-        var height = _camera.orthographicSize;
-        var width = height*_camera.aspect;
+        //height = _camera.orthographicSize;
+        height = Mathf.Abs(transform.position.z* Mathf.Sin(_camera.fieldOfView/2 * Mathf.Deg2Rad) / Mathf.Cos(_camera.fieldOfView / 2 * Mathf.Deg2Rad));
+        width = height*_camera.aspect;
 
-        var minX = Globals.WorldBounds.min.x + width/2;
-        var maxX = Globals.WorldBounds.max.x - width/2;
+        minX = Globals.WorldBounds.min.x + width;
+        maxX = Globals.WorldBounds.max.x - width;
 
-        var minY = Globals.WorldBounds.min.y + height/2;
-        var maxY = Globals.WorldBounds.max.y - height/2;
+        minY = Globals.WorldBounds.min.y + height;
+        maxY = Globals.WorldBounds.max.y - height;
 
         cameraBounds = new Bounds();
         cameraBounds.SetMinMax(new Vector3(minX, minY, -60f), new Vector3(maxX,maxY,-60f));

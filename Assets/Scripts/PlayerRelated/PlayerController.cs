@@ -30,12 +30,16 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        
+    }
+    void Start()
+    {
         gameState = GameObject.Find("GameState").GetComponent<GameState>();
 
         GameObject[] allTransitions = GameObject.FindGameObjectsWithTag("SceneTransition");
         foreach (GameObject sceneTransition in allTransitions)
         {
-            if (sceneTransition.GetComponent<SceneTransition>().sceneName==gameState.spawnPointName && sceneTransition.GetComponent<SceneTransition>().transitionType==gameState.transitionType)
+            if (sceneTransition.GetComponent<SceneTransition>().sceneName == gameState.spawnPointName && sceneTransition.GetComponent<SceneTransition>().transitionType == gameState.transitionType)
             {
                 this.transform.position = sceneTransition.transform.GetChild(0).gameObject.transform.position;
                 break;
@@ -56,11 +60,8 @@ public class PlayerController : MonoBehaviour
         }
         moveable = 1;
         animator.enabled = false;
-        
 
-    }
-    void Start()
-    {
+
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
         StartCoroutine(gameState.SceneFadeIn());

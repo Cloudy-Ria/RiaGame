@@ -57,12 +57,13 @@ public class GameState : MonoBehaviour
                 sceneIterations[scenes[i]] ++;
             }
         }
+        bgMusic = this.gameObject.transform.Find("BackgroundMusic").gameObject;
+        battleMusic = this.gameObject.transform.Find("BattleMusic").gameObject;
     }
 
     private void Start()
     {
-        bgMusic = this.gameObject.transform.Find("BackgroundMusic").gameObject;
-        battleMusic = this.gameObject.transform.Find("BattleMusic").gameObject;
+        
     }
 
     public string GetSceneIteration(string sceneName)
@@ -135,6 +136,10 @@ public class GameState : MonoBehaviour
         }
         else if (!bgMusic.activeSelf){
             bgMusic.SetActive(true);
+            battleMusic.SetActive(false);
+        }
+        else
+        {
             battleMusic.SetActive(false);
         }
 

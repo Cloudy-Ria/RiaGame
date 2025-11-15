@@ -42,7 +42,7 @@ AudioSource:
   m_GameObject: {fileID: 1352439557895987931}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 30d3de1c70e9d35429d375cb5f471060,
+  OutputAudioMixerGroup: {fileID: -8545415280964860951, guid: 30d3de1c70e9d35429d375cb5f471060,
     type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 94fb7958dde5dfd48a7a2ba5196e78af, type: 3}
@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22164a1cb5ba68f4e960652731cae9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 0
   respawnScene: LeftRuins_Tutorial
   fixedRiaMemory: 0
   maxHealth: 0
@@ -253,7 +254,7 @@ AudioSource:
   m_GameObject: {fileID: 9158800697835298652}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 30d3de1c70e9d35429d375cb5f471060,
+  OutputAudioMixerGroup: {fileID: -8545415280964860951, guid: 30d3de1c70e9d35429d375cb5f471060,
     type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: cf1eb5c4c79a062479dc8eaf191c06ba, type: 3}

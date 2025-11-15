@@ -8,3 +8,5 @@
 Для планирования порядка, имен, предназначений и наполнений комнат используется Фигма, https://www.figma.com/design/7Slb9UULDPb2jukSRNBHgt/Ria-Game-Concept?node-id=0-1&t=3fQJDp8Ri9RlOPqJ-1
 
 P.s. Используй Box Collider 2d в обьекте Scene Boundary для ограничения движения камеры по сцене.
+
+P.s.p.s. При названии сцены со словом "Arena", в ней будет играть музыка битв
