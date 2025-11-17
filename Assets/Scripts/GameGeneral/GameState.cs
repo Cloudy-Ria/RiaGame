@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -61,9 +63,67 @@ public class GameState : MonoBehaviour
         battleMusic = this.gameObject.transform.Find("BattleMusic").gameObject;
     }
 
-    private void Start()
+    public void Start()
     {
+        LoadFromJson();
+    }
+
+    public void LoadFromJson()
+    {
+        string json = "haha";
+        string path = Application.persistentDataPath + '\\'+"data.muahaha";
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream fileStream = new FileStream(path, FileMode.Open);
+            json = formatter.Deserialize(fileStream) as string;
+            fileStream.Close();
+        }
+        if (json != "haha")
+        {
+            JsonUtility.FromJsonOverwrite(json, this);
+        }
         
+        /*
+        if (!PlayerPrefs.HasKey("SavedGameState"))
+            return;
+
+        string json = PlayerPrefs.GetString("SavedGameState");
+
+        JsonUtility.FromJsonOverwrite(json,this);*/
+
+
+        /*
+        masterVolume = savedData.masterVolume;
+        itemsRiaMemory = savedData.itemsRiaMemory;
+        sceneIterations = savedData.sceneIterations;
+        targetSceneIteration = savedData.targetSceneIteration;
+        scenePhotosTaken = savedData.scenePhotosTaken;
+        respawnScene = savedData.respawnScene;
+        fixedRiaMemory = savedData.fixedRiaMemory;
+        flipX = savedData.flipX;
+        spawnPointName = savedData.spawnPointName;
+        transitionType = savedData.transitionType;*/
+
+
+
+
+
+    }
+    public void SaveToJson()
+    {
+        string json = JsonUtility.ToJson(this);
+
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + '\\' + "data.muahaha";
+        FileStream fileStream = new FileStream(path, FileMode.Create);
+        formatter.Serialize(fileStream, json);
+        fileStream.Close();
+
+        /*
+        // Save the converted JSON into the PlayerPrefs
+        PlayerPrefs.SetString("SavedGameState", json);
+        PlayerPrefs.Save();*/
     }
 
     public string GetSceneIteration(string sceneName)

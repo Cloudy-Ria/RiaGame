@@ -71,6 +71,11 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        var gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        if (gameState != null)
+        {
+            gameState.SaveToJson();
+        }
         Application.Quit();
         Debug.Log("Quit the game.");
     }
