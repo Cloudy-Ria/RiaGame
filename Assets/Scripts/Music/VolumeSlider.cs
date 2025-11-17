@@ -9,10 +9,7 @@ public class VolumeSlider : MonoBehaviour
     private void Start()
     {
         gameState = GameObject.Find("GameState").GetComponent<GameState>();
-        if (gameState.masterVolume != 0f)
-        {
-            GetComponent<Slider>().value = gameState.masterVolume;
-        }
+        GetComponent<Slider>().value = gameState.masterVolume;
     }
     public void SetVolume(float sliderValue)
     {

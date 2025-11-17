@@ -44,6 +44,7 @@ public class SceneTransition : MonoBehaviour
         gameState.spawnPointName = currentSceneName;
         gameState.transitionType = transitionType;
         gameState.OnTransition(currentSceneName);
+        gameState.respawnScene = sceneName;
 
         //Scene loading
         var newScene = SceneManager.LoadSceneAsync(gameState.GetSceneIteration(sceneName));

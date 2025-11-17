@@ -32,6 +32,7 @@ public class GameState : MonoBehaviour
     
     void Awake()
     {
+        masterVolume = 1f;
         itemsRiaMemory = new Dictionary<string, int>()
         {
             { "key", -1 },
@@ -61,69 +62,101 @@ public class GameState : MonoBehaviour
         }
         bgMusic = this.gameObject.transform.Find("BackgroundMusic").gameObject;
         battleMusic = this.gameObject.transform.Find("BattleMusic").gameObject;
+
+        
     }
 
     public void Start()
     {
         LoadFromJson();
+        //VolumeSlider volumeSlider = GameObject.Find("VolumeSlider").GetComponent<VolumeSlider>();
+        //volumeSlider.SetVolume(masterVolume);
     }
 
     public void LoadFromJson()
     {
-        string json = "haha";
         string path = Application.persistentDataPath + '\\'+"data.muahaha";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
+
             FileStream fileStream = new FileStream(path, FileMode.Open);
-            json = formatter.Deserialize(fileStream) as string;
+            string json = formatter.Deserialize(fileStream) as string;
             fileStream.Close();
-        }
-        if (json != "haha")
-        {
             JsonUtility.FromJsonOverwrite(json, this);
+
+            string path2 = Application.persistentDataPath + '\\' + "itemsRiaMemory.muahaha";
+            FileStream fileStream2 = new FileStream(path2, FileMode.Open);
+            fileStream2.Close();
+            JsonUtility.FromJsonOverwrite(json, this.itemsRiaMemory);
+
+            string path3 = Application.persistentDataPath + '\\' + "sceneIterations.muahaha";
+            FileStream fileStream3 = new FileStream(path3, FileMode.Open);
+            fileStream3.Close();
+            JsonUtility.FromJsonOverwrite(json, this.sceneIterations);
+
+            string path4 = Application.persistentDataPath + '\\' + "targetSceneIteration.muahaha";
+            FileStream fileStream4 = new FileStream(path4, FileMode.Open);
+            fileStream4.Close();
+            JsonUtility.FromJsonOverwrite(json, this.targetSceneIteration);
+
+            string path5 = Application.persistentDataPath + '\\' + "scenePhotosTaken.muahaha";
+            FileStream fileStream5 = new FileStream(path5, FileMode.Open);
+            fileStream5.Close();
+            JsonUtility.FromJsonOverwrite(json, this.scenePhotosTaken);
+
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            string targetScene = GetSceneIteration(respawnScene);
+            if (currentSceneName != targetScene)
+            {
+                SceneManager.LoadScene(targetScene);
+            }
+            
         }
-        
-        /*
-        if (!PlayerPrefs.HasKey("SavedGameState"))
-            return;
-
-        string json = PlayerPrefs.GetString("SavedGameState");
-
-        JsonUtility.FromJsonOverwrite(json,this);*/
-
-
-        /*
-        masterVolume = savedData.masterVolume;
-        itemsRiaMemory = savedData.itemsRiaMemory;
-        sceneIterations = savedData.sceneIterations;
-        targetSceneIteration = savedData.targetSceneIteration;
-        scenePhotosTaken = savedData.scenePhotosTaken;
-        respawnScene = savedData.respawnScene;
-        fixedRiaMemory = savedData.fixedRiaMemory;
-        flipX = savedData.flipX;
-        spawnPointName = savedData.spawnPointName;
-        transitionType = savedData.transitionType;*/
-
-
 
 
 
     }
     public void SaveToJson()
     {
-        string json = JsonUtility.ToJson(this);
-
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + '\\' + "data.muahaha";
-        FileStream fileStream = new FileStream(path, FileMode.Create);
-        formatter.Serialize(fileStream, json);
-        fileStream.Close();
+
+        string json1 = JsonUtility.ToJson(this);
+        string path1 = Application.persistentDataPath + '\\' + "data.muahaha";
+        FileStream fileStream1 = new FileStream(path1, FileMode.Create);
+        formatter.Serialize(fileStream1, json1);
+        fileStream1.Close();
+
+        string json2 = JsonUtility.ToJson(itemsRiaMemory);
+        string path2 = Application.persistentDataPath + '\\' + "itemsRiaMemory.muahaha";
+        FileStream fileStream2 = new FileStream(path2, FileMode.Create);
+        formatter.Serialize(fileStream2, json2);
+        fileStream2.Close();
+
+        string json3 = JsonUtility.ToJson(sceneIterations);
+        string path3 = Application.persistentDataPath + '\\' + "sceneIterations.muahaha";
+        FileStream fileStream3 = new FileStream(path3, FileMode.Create);
+        formatter.Serialize(fileStream3, json3);
+        fileStream3.Close();
+
+        string json4 = JsonUtility.ToJson(targetSceneIteration);
+        string path4 = Application.persistentDataPath + '\\' + "targetSceneIteration.muahaha";
+        FileStream fileStream4 = new FileStream(path4, FileMode.Create);
+        formatter.Serialize(fileStream4, json4);
+        fileStream4.Close();
+
+        string json5 = JsonUtility.ToJson(targetSceneIteration);
+        string path5 = Application.persistentDataPath + '\\' + "scenePhotosTaken.muahaha";
+        FileStream fileStream5 = new FileStream(path5, FileMode.Create);
+        formatter.Serialize(fileStream5, json5);
+        fileStream5.Close();
 
         /*
-        // Save the converted JSON into the PlayerPrefs
-        PlayerPrefs.SetString("SavedGameState", json);
-        PlayerPrefs.Save();*/
+        public Dictionary<string, int> itemsRiaMemory;
+        public Dictionary<string, int> sceneIterations;
+        public Dictionary<string, int> targetSceneIteration;
+        public Dictionary<string, bool> scenePhotosTaken;
+        */
     }
 
     public string GetSceneIteration(string sceneName)
