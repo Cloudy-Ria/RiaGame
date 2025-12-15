@@ -67,10 +67,10 @@ namespace StateMachine
 
             if (hit.collider != null)
             {
-                PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
+                HealthManager player = hit.collider.gameObject.GetComponent<HealthManager>();
                 if (player != null)
                 {
-                    player.TakeDamage();
+                    player.ReduceHealth(1, gameObject);
                 }
             }
         }

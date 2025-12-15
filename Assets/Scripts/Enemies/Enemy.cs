@@ -16,14 +16,14 @@ namespace Enemies
 
         private void Awake() => _collider = GetComponent<BoxCollider2D>();
 
-        public void ApplyDamage(HealthManager player) => player.ReduceHealth(1);
+        public void ApplyDamage(HealthManager player) => player.ReduceHealth(1, gameObject);
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             GameObject player = collision.gameObject;
             if (collision.gameObject.CompareTag("Player"))
             {
-                if (player.GetComponent<PlayerController>().moveable == 0) // Проверяем, может ли игрок двигаться
+                if (player.GetComponent<PlayerController>().IsMoveable()) // Проверяем, может ли игрок двигаться
                 {
                     ApplyDamage(player.GetComponent<HealthManager>());
                     StartCoroutine(TemporarilyDisableCollider());
@@ -36,6 +36,11 @@ namespace Enemies
             _collider.enabled = false;
             yield return new WaitForSeconds(_enableColliderDelay);
             _collider.enabled = true;
+        }
+
+        public void TakeDamage(float health)
+        {
+            Debug.Log("Enemy took "+ health +" damage.");
         }
     }
 }

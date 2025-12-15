@@ -67,7 +67,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.021133423, y: -2.4661446}
+  m_Offset: {x: -0.004432678, y: -2.4352455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,7 +77,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.870758, y: 1.1642838}
+  m_Size: {x: 1.6878204, y: 1.1024857}
   m_EdgeRadius: 0
 --- !u!114 &8763077941718320274
 MonoBehaviour:
@@ -91,6 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65750ff12529a74e988735106ee85c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAttack: {fileID: 7962064644917362894}
+  playerController: {fileID: 2494593662845839306}
+  damage: 10
+  jumpHeight: 40
+  cooldown: 0.3
 --- !u!1 &2390370322259964046
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +215,7 @@ MonoBehaviour:
   gravityScale: 10
   fallGravityMultiplier: 1.2
   jumpCutMultiplier: 0.2
+  knockbackStrength: 20
   rb: {fileID: 5312013438746647902}
   sprite: {fileID: 0}
   animator: {fileID: 0}

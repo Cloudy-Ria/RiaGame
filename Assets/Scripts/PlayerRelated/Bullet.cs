@@ -1,9 +1,11 @@
+using Enemies;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float lifespan;
+    [SerializeField] float damage = 5f;
     private float direction;
     private bool hit;
     private float timeAlive = 0f;
@@ -35,12 +37,10 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        /*
         if (collision.gameObject.CompareTag("Monster"))
         {
-        // DamageMonster()
-        }*/
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+        }
 
         if (!collision.gameObject.CompareTag("Player"))
         {

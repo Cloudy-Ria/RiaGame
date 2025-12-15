@@ -10,7 +10,6 @@ public class HealthManager : MonoBehaviour
     private float iFramesTimer = Mathf.Infinity;
     [SerializeField] private float iFramesMax = 1f;
 
-    //public GameObject gameOverPanel; // панель с game over
     void Start()
     {
         UpdateHealthUI();
@@ -23,39 +22,31 @@ public class HealthManager : MonoBehaviour
     }
 
     // Метод для получения урона
-    public void ReduceHealth(int damage)
+    public void ReduceHealth(int damage, GameObject source)
     {
         if (iFramesTimer >= iFramesMax)
         {
             iFramesTimer = 0;
             currentHealth -= damage;
-            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Убеждаемся, что здоровье не меньше 0
+            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
             UpdateHealthUI();
 
             if (currentHealth <= 0)
             {
                 playerController.Die();
-
-                // if (gameOverPanel != null)
-                // {
-                // gameOverPanel.SetActive(true); // Показать панель Game Over
-                // }
-
-                // Здесь можно добавить логику для смерти (например, перезагрузка уровня)
-                // Debug.Log("Game Over!");
             }
             else
             {
-                playerController.TakeDamage();
+                playerController.TakeDamage(source);
             }
         }
     }
 
-    // Метод для восстановления здоровья (если нужно)
+    // Метод для восстановления здоровья
     public void Heal(int amount)
     {
         currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Убеждаемся, что здоровье не больше maxHealth
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHealthUI();
     }
     

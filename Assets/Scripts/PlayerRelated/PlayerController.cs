@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravityScale = 20;
     [SerializeField] private float fallGravityMultiplier = 1.5f;
     [SerializeField] private float jumpCutMultiplier = 0.5f;
+    [SerializeField] private float knockbackStrength = 10f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer sprite;
@@ -183,10 +184,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void TakeDamage()
+    public void Knock(Vector2 direction, float _jumpHeight)
+    {
+        rb.AddForce(direction * _jumpHeight, ForceMode2D.Impulse);
+    }
+
+    public void TakeDamage(GameObject source)
     {
         animator.SetTrigger("Hurt");
-        //To-do: Physical knockback
+        float x_direction = transform.position.x - source.transform.position.x;
+        float y_direction = transform.position.y - source.transform.position.y;
+        x_direction = Mathf.Sign(x_direction);
+        y_direction = Mathf.Clamp01(Mathf.Sign(y_direction));
+        Knock(new Vector2(x_direction, y_direction*2.5f), knockbackStrength);
     }
 
     public void Die()

@@ -11,7 +11,7 @@ public class DamageManager : MonoBehaviour
             HealthManager healthManager = other.GetComponent<HealthManager>();
             if (healthManager != null)
             {
-                healthManager.ReduceHealth(damageAmount);
+                healthManager.ReduceHealth(damageAmount, gameObject);
             }
         }
     }
