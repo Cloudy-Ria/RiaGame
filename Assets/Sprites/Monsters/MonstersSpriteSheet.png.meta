@@ -123,419 +123,441 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Amon_Dive_05
+      name: Air-Amon_Dive_01
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 831
+        width: 168
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4940476, y: 0.5078125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb73a621183e9c948aca614d8433dd3f
+      internalID: 1389951615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Dive_02
       rect:
         serializedVersion: 2
         x: 1
-        y: 799
-        width: 218
-        height: 224
-      alignment: 9
-      pivot: {x: 0.3853211, y: 0.35044643}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 536b434d08e064f499f7b8ffacf3daaa
-      internalID: -1362156706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Dive_06
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 559
-        width: 190
-        height: 238
-      alignment: 9
-      pivot: {x: 0.4105263, y: 0.37184873}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7f880f2e4f474d4187d63d7d8c3b262
-      internalID: -2003600028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_01
-      rect:
-        serializedVersion: 2
-        x: 485
-        y: 524
-        width: 175
-        height: 206
-      alignment: 9
-      pivot: {x: 0.4342857, y: 0.5218447}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bf0044c155864e4088c4a584d4c0891
-      internalID: -307323875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_02
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 655
-        width: 203
-        height: 187
-      alignment: 9
-      pivot: {x: 0.4187192, y: 0.5534759}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11c59cb79c3799d42bec8ae61321049e
-      internalID: 334485903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_03
-      rect:
-        serializedVersion: 2
-        x: 311
-        y: 665
-        width: 201
-        height: 221
-      alignment: 9
-      pivot: {x: 0.43283582, y: 0.54977375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1529276249b54bf48a3f94108d28119d
-      internalID: 1050636513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_04
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 680
-        width: 205
+        y: 591
+        width: 171
         height: 210
       alignment: 9
-      pivot: {x: 0.35609755, y: 0.64047617}
+      pivot: {x: 0.5263158, y: 0.4738095}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdf16e78eb35c5c4cadfe928cdcfd777
-      internalID: 1884615121
+      spriteID: dbe7a425f44d7d84aa7da8347d1a587d
+      internalID: -351331149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amon_Fly_07
+      name: Air-Amon_DiveStart_01
       rect:
         serializedVersion: 2
-        x: 147
-        y: 739
-        width: 212
-        height: 218
-      alignment: 9
-      pivot: {x: 0.5141509, y: 0.51605505}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e55a1b510e3a5a746a6f1c33199fd0d2
-      internalID: -1335958215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_08
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 520
-        width: 194
-        height: 233
-      alignment: 9
-      pivot: {x: 0.52577317, y: 0.48712447}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 293259cb860ce7c4481a1394b77769ef
-      internalID: 238513533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_09
-      rect:
-        serializedVersion: 2
-        x: 598
-        y: 844
-        width: 302
-        height: 89
-      alignment: 9
-      pivot: {x: 0.49006623, y: 1.2865169}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c821eb16eb003d54f94fd70250e38361
-      internalID: -308370460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_10
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 888
-        width: 288
-        height: 135
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8111111}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c078ebaf6da9ab49abd0a9b8d04e02b
-      internalID: 1601291157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Amon_Fly_11
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 871
-        width: 202
-        height: 152
-      alignment: 9
-      pivot: {x: 0.45049506, y: 0.87828946}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e8e0d2a294577f429ccd22689672c20
-      internalID: 1707840010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GMon_Charge_01
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 526
-        width: 182
-        height: 146
-      alignment: 9
-      pivot: {x: 0.489011, y: 0.5650685}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7da63c8ec28e6e443acc0af66f7adb1a
-      internalID: -601769554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GMon_Charge_02
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 1
-        width: 170
-        height: 149
-      alignment: 9
-      pivot: {x: 0.5058824, y: 0.5604027}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53f5b114094a3c84c8d4b58e288fb831
-      internalID: -1853556049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GMon_Charge_03
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 539
+        x: 185
+        y: 726
         width: 175
-        height: 156
+        height: 188
       alignment: 9
-      pivot: {x: 0.51428574, y: 0.55448717}
+      pivot: {x: 0.41714287, y: 0.35904256}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ea02810413af14bb7b8101c8c6cd28
-      internalID: 1516054347
+      spriteID: 3d2e334f85a9ec740be36412f0b98e43
+      internalID: 2074824696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMon_Charge_04
+      name: Air-Amon_DiveStart_02
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 524
+        width: 157
+        height: 200
+      alignment: 9
+      pivot: {x: 0.41401273, y: 0.3675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649ba52eebd54264b830df8e280dbf99
+      internalID: -984516931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Fly_01
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 345
+        width: 146
+        height: 177
+      alignment: 9
+      pivot: {x: 0.45890412, y: 0.5169492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaec319c2a9e8546af46784a0c6cdef
+      internalID: -800372902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Fly_02
       rect:
         serializedVersion: 2
         x: 851
-        y: 721
-        width: 172
-        height: 155
+        y: 696
+        width: 164
+        height: 160
       alignment: 9
-      pivot: {x: 0.4883721, y: 0.57096773}
+      pivot: {x: 0.39634147, y: 0.528125}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51d3a6e53b8866a42aeee96f82700ec0
-      internalID: 684588816
+      spriteID: 6c5a1a08787769141b7151b04ced7732
+      internalID: 2051396912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMon_Crawl_01
+      name: Air-Amon_Fly_03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 404
+        width: 157
+        height: 185
+      alignment: 9
+      pivot: {x: 0.4522293, y: 0.53243244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c36a1c16e53524f84ce3cbe58d97e7
+      internalID: 133740134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Fly_04
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 858
+        width: 166
+        height: 165
+      alignment: 9
+      pivot: {x: 0.36144578, y: 0.6333333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9336f25457f4a74481dec6c22fe6d83
+      internalID: -1075022368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Land_01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 941
+        width: 250
+        height: 82
+      alignment: 9
+      pivot: {x: 0.488, y: 1.152439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afadefef3c70ca4abb9ca0f5974119b
+      internalID: 1808770863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Land_02
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 916
+        width: 246
+        height: 107
+      alignment: 9
+      pivot: {x: 0.49593496, y: 0.87383175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a270d8eeb9bd7a64c8f5805cd780dd8b
+      internalID: -60532568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Amon_Land_03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 803
+        width: 182
+        height: 136
+      alignment: 9
+      pivot: {x: 0.45604396, y: 0.8272059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a908d5b937f76a44781ef91f8eab77fb
+      internalID: 1481488074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Charge_01
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 903
+        width: 178
+        height: 120
+      alignment: 9
+      pivot: {x: 0.44382024, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7dc8f442373d643ba83c430c66e864
+      internalID: -1281283201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Charge_02
       rect:
         serializedVersion: 2
         x: 655
-        y: 515
-        width: 176
-        height: 163
+        y: 704
+        width: 153
+        height: 125
       alignment: 9
-      pivot: {x: 0.39772728, y: 0.5368098}
+      pivot: {x: 0.5294118, y: 0.572}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79bdf6f6e82d0f04083271a78064ae4c
-      internalID: 1840212325
+      spriteID: 0cc39fb38c8b9da4285838225ff33b98
+      internalID: 509469975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMon_Crawl_02
+      name: Ground-GMon_Charge_03
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 761
+        width: 159
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5220126, y: 0.50357145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08660af795be8e040a5d73f6757f3c65
+      internalID: -340688842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Charge_04
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 629
+        width: 150
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5133333, y: 0.5576923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ab2626363740b48a35eb6367dd4106
+      internalID: -23693220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Crawl_01
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 789
+        width: 130
+        height: 125
+      alignment: 9
+      pivot: {x: 0.35384616, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab3cf2002f9db64a87c9d522dcfebc8
+      internalID: -1260343038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Crawl_02
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 646
+        width: 126
+        height: 141
+      alignment: 9
+      pivot: {x: 0.3968254, y: 0.4929078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b08e3df27b68145a46128a454d42a5
+      internalID: -1525230089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Crawl_03
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
-        width: 164
-        height: 156
+        y: 269
+        width: 145
+        height: 133
       alignment: 9
-      pivot: {x: 0.44512194, y: 0.5480769}
+      pivot: {x: 0.39310345, y: 0.5451128}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2503f7e2b656ef94dbd55cabd75a9ce3
-      internalID: -1187149363
+      spriteID: c1c1418e08870b640a7df75b5592f225
+      internalID: -647888647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GMon_Crawl_03
-      rect:
-        serializedVersion: 2
-        x: 875
-        y: 1
-        width: 148
-        height: 146
-      alignment: 9
-      pivot: {x: 0.3716216, y: 0.54452056}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8764296c57acdfd43b57472513892b44
-      internalID: 280905283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GMon_Crawl_04
+      name: Ground-GMon_Crawl_04
       rect:
         serializedVersion: 2
         x: 1
-        y: 391
-        width: 156
-        height: 166
+        y: 269
+        width: 145
+        height: 133
       alignment: 9
-      pivot: {x: 0.39102563, y: 0.49698794}
+      pivot: {x: 0.39310345, y: 0.5451128}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca90846a4140c98479af709ae0a78582
-      internalID: -354783459
+      spriteID: a0a1f9d8abd0aa24886cbce58f935017
+      internalID: 841464296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-GMon_Crawl_05
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 516
+        width: 147
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4217687, y: 0.55859375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdc2001bb586da4d8c01598ef008521
+      internalID: -535412362
       vertices: []
       indices: 
       edges: []
@@ -554,25 +576,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Amon_Dive_05: -1362156706
-      Amon_Dive_06: -2003600028
-      Amon_Fly_01: -307323875
-      Amon_Fly_02: 334485903
-      Amon_Fly_03: 1050636513
-      Amon_Fly_04: 1884615121
-      Amon_Fly_07: -1335958215
-      Amon_Fly_08: 238513533
-      Amon_Fly_09: -308370460
-      Amon_Fly_10: 1601291157
-      Amon_Fly_11: 1707840010
-      GMon_Charge_01: -601769554
-      GMon_Charge_02: -1853556049
-      GMon_Charge_03: 1516054347
-      GMon_Charge_04: 684588816
-      GMon_Crawl_01: 1840212325
-      GMon_Crawl_02: -1187149363
-      GMon_Crawl_03: 280905283
-      GMon_Crawl_04: -354783459
+      Air-Amon_DiveStart_01: 2074824696
+      Air-Amon_DiveStart_02: -984516931
+      Air-Amon_Dive_01: 1389951615
+      Air-Amon_Dive_02: -351331149
+      Air-Amon_Fly_01: -800372902
+      Air-Amon_Fly_02: 2051396912
+      Air-Amon_Fly_03: 133740134
+      Air-Amon_Fly_04: -1075022368
+      Air-Amon_Land_01: 1808770863
+      Air-Amon_Land_02: -60532568
+      Air-Amon_Land_03: 1481488074
+      Ground-GMon_Charge_01: -1281283201
+      Ground-GMon_Charge_02: 509469975
+      Ground-GMon_Charge_03: -340688842
+      Ground-GMon_Charge_04: -23693220
+      Ground-GMon_Crawl_01: -1260343038
+      Ground-GMon_Crawl_02: -1525230089
+      Ground-GMon_Crawl_03: -647888647
+      Ground-GMon_Crawl_04: 841464296
+      Ground-GMon_Crawl_05: -535412362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
