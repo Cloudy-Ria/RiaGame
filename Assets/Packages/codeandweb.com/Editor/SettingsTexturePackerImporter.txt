@@ -2,13 +2,16 @@ version: 2
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 - Assets/Sprites/Monsters/MonstersSpriteSheet.tpsheet
+- Assets/Sprites/Player/FxSprites.tpsheet
 - Assets/Sprites/Player/RiaSpriteSheet.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Sprites/Monsters/MonstersSpriteSheet.png
+- Assets/Sprites/Player/FxSprites.png
 - Assets/Sprites/Player/RiaSpriteSheet.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
 - 
 enableDebugOutput: 0

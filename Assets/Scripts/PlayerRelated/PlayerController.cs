@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     private InputAction moveAction;
     private InputAction jumpAction;
+    private InputAction interactAction;
+
 
     [SerializeField] private float moveSpeed = 10;
     [SerializeField] private float acceleration = 7;
@@ -23,14 +26,17 @@ public class PlayerController : MonoBehaviour
     private float moveHor;
     private int grounded = 0;
     private float bufferedJump = Mathf.Infinity;
-    [SerializeField] private float bufferedJumpMax = 0.2f;
+    [SerializeField] private float bufferedJumpMax = 0.1f;
     public int moveable; //0 = true. Please use ++ and -- to change values.
-    private bool jumpInputReleased = true;
+    private bool jumpActionEnded = true;
+    [SerializeField] private bool isBusy = false;
+    private bool isInteracting = false;
+
     GameState gameState;
 
     private void Awake()
     {
-        
+
     }
     void Start()
     {
@@ -64,68 +70,82 @@ public class PlayerController : MonoBehaviour
 
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
+        interactAction = InputSystem.actions.FindAction("Interact");
+
         StartCoroutine(gameState.SceneFadeIn());
 
     }
 
     void Update()
     {
-        if (moveable == 0)
-        {
-            moveHor = moveAction.ReadValue<Vector2>()[0];
-        }
-        else
-        {
-            moveHor = 0;
-        }
+        //Button Buffers
         if (jumpAction.inProgress)
         {
             bufferedJump = 0;
         }
-        if (moveable==0 && bufferedJump < bufferedJumpMax && moveable == 0 && grounded > 0)
+
+        //If the player cuts the jump
+        if (!jumpActionEnded && !jumpAction.inProgress)
         {
-            animator.SetTrigger("Jump");//AnimationEventJump() gets triggered
-        }
-        if (!jumpInputReleased&& !jumpAction.inProgress)
-        {
+            jumpActionEnded = true;
+
             if (rb.linearVelocityY > 0)
             {
-                rb.AddForce(Vector2.down * rb.linearVelocityY * (1-jumpCutMultiplier), ForceMode2D.Impulse);
+                rb.AddForce(Vector2.down * rb.linearVelocityY * (1 - jumpCutMultiplier), ForceMode2D.Impulse);
             }
-            jumpInputReleased = true;
         }
+        //If the player is immovable (in a cutscene, dead, loading in, etc.)
+        if (moveable != 0)
+        {
+            moveHor = 0;
+            animator.SetBool("Walking", false);
+            return;
+        }
+
+        //Movement
+        moveHor = moveAction.ReadValue<Vector2>()[0];
         animator.SetBool("Walking", moveHor != 0);
+
+        //Jump
+        if (bufferedJump < bufferedJumpMax && jumpAction.inProgress && IsGrounded() && !IsBusy() && jumpActionEnded == true)
+        {
+            animator.SetTrigger("Jump");
+            Jump(jumpHeight);
+        }
+
+        isInteracting = interactAction.inProgress;
+
+        //Buffer Timers
         bufferedJump += Time.deltaTime;
     }
     void FixedUpdate()
     {
+        //Sprite Flip
         if (moveHor < -0.01f)
         {
-            sprite.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (moveHor > 0.01f)
         {
-            sprite.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
         }
 
-        #region Walk
+        //Walk
         float targetSpeed = moveHor * moveSpeed;
         float speedDif = targetSpeed - rb.linearVelocityX;
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
         float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
         rb.AddForce(movement * Vector2.right); //Fluid movement
                                                //rb.linearVelocityX = moveHor * speed; //Old movement
-        #endregion
-        #region Friction
-        if (grounded>0 && Mathf.Abs(moveHor) < 0.01f)
+                                               //Friction
+        if (IsGrounded() && Mathf.Abs(moveHor) < 0.01f)
         {
             float amount = Mathf.Min(Mathf.Abs(rb.linearVelocityX), Mathf.Abs(frictionAmount));
-            amount*=Mathf.Sign(rb.linearVelocityX);
+            amount *= Mathf.Sign(rb.linearVelocityX);
             rb.AddForce(Vector2.right * -amount, ForceMode2D.Impulse);
         }
-        #endregion
 
-        #region Jump Gravity
+        //Jump Gravity
         if (rb.linearVelocityY < 0)
         {
             rb.gravityScale = gravityScale * fallGravityMultiplier;
@@ -134,15 +154,14 @@ public class PlayerController : MonoBehaviour
         {
             rb.gravityScale = gravityScale;
         }
-        #endregion
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Ground"))
         {
-            grounded+=1;
+            grounded += 1;
             animator.SetInteger("Ground", grounded);
-            if (grounded==1)
+            if (grounded == 1)
             {
                 animator.ResetTrigger("Jump");
             }
@@ -152,23 +171,18 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Ground"))
         {
-            grounded-=1;
+            grounded -= 1;
             animator.SetInteger("Ground", grounded);
         }
     }
-
-
     public void Jump(float _jumpHeight)
     {
-        
+
         rb.AddForce(Vector2.up * _jumpHeight, ForceMode2D.Impulse);
-        jumpInputReleased = false;
+        jumpActionEnded = false;
 
     }
-    public void AnimationEventJump()
-    {
-        Jump(jumpHeight);
-    }
+
     public void TakeDamage()
     {
         animator.SetTrigger("Hurt");
@@ -179,8 +193,6 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("Dead");
         moveable += 1;
-        //GameObject overlay = GameObject.Find("/PlayerInterface/DeathOverlay");
-        //overlay.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         StartCoroutine(gameState.RespawnPlayer(1));
     }
 
@@ -193,4 +205,30 @@ public class PlayerController : MonoBehaviour
         moveable--;
     }
 
+    public bool IsGrounded()
+    {
+        return (grounded > 0);
+    }
+    public bool IsMoveable()
+    {
+        return moveable == 0;
+    }
+    public bool IsBusy()
+    {
+        return isBusy;
+    }
+    public void StartBeingBusy()
+    {
+        isBusy = true;
+    }
+
+    public void StopBeingBusy()
+    {
+        isBusy = false;
+    }
+
+    public bool IsInteracting()
+    {
+        return isInteracting;
+    }
 }

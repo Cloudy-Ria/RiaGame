@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 using static UnityEngine.Rendering.DebugUI;
@@ -18,6 +19,7 @@ public class GameState : MonoBehaviour
     public Dictionary<string, int> sceneIterations;
     public Dictionary<string, int> targetSceneIteration;
     public Dictionary<string, bool> scenePhotosTaken;
+    public Dictionary<string, bool> objectPhotosTaken;
     public string respawnScene = "LeftRuins_Tutorial";
     public bool fixedRiaMemory = false;
 
@@ -35,13 +37,19 @@ public class GameState : MonoBehaviour
         masterVolume = 1f;
         itemsRiaMemory = new Dictionary<string, int>()
         {
-            { "key", -1 },
-            { "sofa", -1 }
+            { "Key", -1 },
+            { "Sofa", -1 }
         };
 
         sceneIterations = new Dictionary<string, int>();
         targetSceneIteration = new Dictionary<string, int>();
         scenePhotosTaken = new Dictionary<string, bool>();
+        objectPhotosTaken = new Dictionary<string, bool>();
+        var keys = itemsRiaMemory.Keys.ToList();
+        for (int i = 0; i < keys.Count; i++)
+        {
+            objectPhotosTaken[keys[i]] = false;
+        }
         //Count the number of scene iterations with the same name, i.e. Ruins_01 and Ruins_02 are two scenes with the name Ruins.
         int sceneCount = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
         string[] scenes = new string[sceneCount];
@@ -105,6 +113,11 @@ public class GameState : MonoBehaviour
             fileStream5.Close();
             JsonUtility.FromJsonOverwrite(json, this.scenePhotosTaken);
 
+            string path6 = Application.persistentDataPath + '\\' + "scenePhotosTaken.muahaha";
+            FileStream fileStream6 = new FileStream(path6, FileMode.Open);
+            fileStream6.Close();
+            JsonUtility.FromJsonOverwrite(json, this.objectPhotosTaken);
+
             string currentSceneName = SceneManager.GetActiveScene().name;
             string targetScene = GetSceneIteration(respawnScene);
             if (currentSceneName != targetScene)
@@ -150,6 +163,12 @@ public class GameState : MonoBehaviour
         FileStream fileStream5 = new FileStream(path5, FileMode.Create);
         formatter.Serialize(fileStream5, json5);
         fileStream5.Close();
+
+        string json6 = JsonUtility.ToJson(targetSceneIteration);
+        string path6 = Application.persistentDataPath + '\\' + "objectPhotosTaken.muahaha";
+        FileStream fileStream6 = new FileStream(path6, FileMode.Create);
+        formatter.Serialize(fileStream6, json6);
+        fileStream6.Close();
 
         /*
         public Dictionary<string, int> itemsRiaMemory;
@@ -256,4 +275,16 @@ public class GameState : MonoBehaviour
 
     }
 
+    public void MemoriseItem(string item)
+    {
+        if (itemsRiaMemory.ContainsKey(item))
+        {
+            itemsRiaMemory[item] = 1;
+        }
+    }
+
+    public void FixRiaMemory()
+    {
+        fixedRiaMemory = true;
+    }
 }
