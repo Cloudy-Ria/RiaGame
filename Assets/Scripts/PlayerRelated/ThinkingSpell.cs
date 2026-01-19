@@ -10,6 +10,9 @@ public class ThinkingSpell : MonoBehaviour
     [SerializeField] GameObject Cloud;
     [SerializeField] Transform SpellPoint;
     [SerializeField] GameObject StandIn, KeyMemory, SofaMemory, KeyMagic, SofaMagic;
+    [SerializeField] List<GameObject> SpawnedItems;
+    public readonly int MaxSpawnedItems = 2;
+    private int spawnedItemIndex = 0;
     Dictionary<string, GameObject> memories;
     Dictionary<string, GameObject> magic;
     List<string> items = new List<string>();
@@ -20,7 +23,11 @@ public class ThinkingSpell : MonoBehaviour
     GameObject currentMemory = null;
     void Start()
     {
-        
+        SpawnedItems = new List<GameObject>();
+        for (int i = 0; i < MaxSpawnedItems; i++)
+        {
+            SpawnedItems.Add(null);
+        }
     }
     private void OnEnable()
     {
@@ -107,8 +114,15 @@ public class ThinkingSpell : MonoBehaviour
     }
     public void SpawnItem()
     {
+        if (SpawnedItems.Count == MaxSpawnedItems)
+        {
+            Destroy(SpawnedItems[spawnedItemIndex]);
+        }
         GameObject newItem = Instantiate(magic[items[currentIndex]]);
         newItem.transform.position = SpellPoint.position;
+        SpawnedItems[spawnedItemIndex] = newItem;
+        spawnedItemIndex = (spawnedItemIndex + 1) % MaxSpawnedItems;
         gameObject.SetActive(false);
+
     }
 }
