@@ -1,4 +1,4 @@
-using Enemies;
+//using Enemies;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Monster"))
         {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
         }
 
         if (!collision.gameObject.CompareTag("Player"))

@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: bed5740decc49f645803c36c7a3a24d6
+guid: 61e323d9b340b274987fe34206fe8cf4
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 9075407754075586683
-    second: SnowTiles_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,8 +71,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,199 +123,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SnowTiles_0
+      name: GMon_Charge_01
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 402
+        width: 429
+        height: 348
+      alignment: 9
+      pivot: {x: 0.47902098, y: 0.60057473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8189bf49e904304ab34db69045e28e1
+      internalID: -432826863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GMon_Charge_02
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 664
+        width: 405
+        height: 360
+      alignment: 9
+      pivot: {x: 0.4925926, y: 0.58055556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d924e3dd55a91408f0b00183a63a4f
+      internalID: 784494175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GMon_Charge_03
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b70408dc44352fd70800000000000000
-      internalID: 9075407754075586683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SnowTiles_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 640
+        width: 427
+        height: 384
+      alignment: 9
+      pivot: {x: 0.47423887, y: 0.5520833}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaba84e3eb5cdf240b8fa0fc47010358
-      internalID: 707991384
+      spriteID: 6babd40a8228a0840a17803c38782497
+      internalID: 2093136933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_2
+      name: GMon_Charge_04
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 366
+        y: 253
+        width: 410
+        height: 378
+      alignment: 9
+      pivot: {x: 0.48658538, y: 0.56349206}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d7790efba7b5214589c96d73f6f471f
-      internalID: 780410775
+      spriteID: d8930068401f7954a9c41465d9caee48
+      internalID: 1101337002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_3
+      name: GMon_Crawl_01
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1324
+        y: 666
+        width: 377
+        height: 358
+      alignment: 9
+      pivot: {x: 0.367374, y: 0.5726257}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8845bef33352f934db322456c1c0d8f7
-      internalID: -438475354
+      spriteID: cd856177917091e4a98545b21a09a85a
+      internalID: 1011283342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_4
+      name: GMon_Crawl_02
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 673
+        y: 365
+        width: 370
+        height: 407
+      alignment: 9
+      pivot: {x: 0.39054054, y: 0.49140048}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 457aa106454025b4196b4a6e77b8acec
-      internalID: -1169033030
+      spriteID: ad7cf20bf3a6e314db2e7c0701cb1b0b
+      internalID: 214872564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_5
+      name: GMon_Crawl_03
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 396
+        y: 629
+        width: 408
+        height: 395
+      alignment: 9
+      pivot: {x: 0.42034313, y: 0.5417721}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2895561177e6cfc498b30bd961d69298
-      internalID: 804407574
+      spriteID: 32124341f503b02489956084f44d27d7
+      internalID: -100405905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_6
+      name: GMon_Crawl_04
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 249
+        width: 408
+        height: 395
+      alignment: 9
+      pivot: {x: 0.42034313, y: 0.5417721}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23fcdaab80b8df540b84cd99baf4c3fb
-      internalID: 837070473
+      spriteID: d42206fff4033974d8a6d157a7631d06
+      internalID: -1587030787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_7
+      name: GMon_Crawl_05
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 864
+        y: 40
+        width: 400
+        height: 375
+      alignment: 9
+      pivot: {x: 0.41625, y: 0.5653333}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b99b92e675303b4c9d9e8bfcd9123f1
-      internalID: 1307914465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SnowTiles_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b759f39dd2b43347b2d13f0d5d5e989
-      internalID: -540154478
+      spriteID: 36f3e9b3eb3ecb24a986490dfee8c7e3
+      internalID: -467710820
       vertices: []
       indices: 
       edges: []
@@ -327,7 +324,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 142dacb4474afac40bc950e38ec16013
+    spriteID: 2f7d425207519ab4e9c290307313f0ae
     internalID: 0
     vertices: []
     indices: 
@@ -337,15 +334,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SnowTiles_0: 9075407754075586683
-      SnowTiles_1: 707991384
-      SnowTiles_2: 780410775
-      SnowTiles_3: -438475354
-      SnowTiles_4: -1169033030
-      SnowTiles_5: 804407574
-      SnowTiles_6: 837070473
-      SnowTiles_7: 1307914465
-      SnowTiles_8: -540154478
+      GMon_Charge_01: -432826863
+      GMon_Charge_02: 784494175
+      GMon_Charge_03: 2093136933
+      GMon_Charge_04: 1101337002
+      GMon_Crawl_01: 1011283342
+      GMon_Crawl_02: 214872564
+      GMon_Crawl_03: -100405905
+      GMon_Crawl_04: -1587030787
+      GMon_Crawl_05: -467710820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

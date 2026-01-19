@@ -1,47 +1,54 @@
-using System.Collections;
-using Enemies.Interfaces;
 using UnityEngine;
 
-namespace Enemies
+public class Enemy : MonoBehaviour
 {
-    /// <summary>
-    /// Базовый класс врага - наносит урон при столкновении с игроком
-    /// Требует наличия BoxCollider2D (добавляется автоматически через PatrolState)
-    /// </summary>
-    public class Enemy : MonoBehaviour, IDamaging
+    public Transform pointA;
+    public Transform pointB;
+    public float speed = 3f;
+
+    private Rigidbody2D rb;
+    private Transform currentPoint;
+    private bool facingRight = false;
+
+    void Start()
     {
-        [SerializeField] private float _enableColliderDelay = 1.5f;
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0f;
+        currentPoint = pointB;
+    }
 
-        private BoxCollider2D _collider;
+    void FixedUpdate()
+    {
+        Vector2 direction = (currentPoint.position - transform.position).normalized;
+        rb.linearVelocity = direction * speed;
 
-        private void Awake() => _collider = GetComponent<BoxCollider2D>();
+        HandleFlip(direction.x);
 
-        public void ApplyDamage(HealthManager player) => player.ReduceHealth(1, gameObject);
-
-        private void OnTriggerEnter2D(Collider2D collision)
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.2f)
         {
-            GameObject player = collision.gameObject;
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                if (player.GetComponent<PlayerController>().IsMoveable()) // Проверяем, может ли игрок двигаться
-                {
-                    ApplyDamage(player.GetComponent<HealthManager>());
-                    StartCoroutine(TemporarilyDisableCollider());
-                }
-            }
-        }
-
-        private IEnumerator TemporarilyDisableCollider()
-        {
-            _collider.enabled = false;
-            yield return new WaitForSeconds(_enableColliderDelay);
-            _collider.enabled = true;
-        }
-
-        public void TakeDamage(float health)
-        {
-            Debug.Log("Enemy took "+ health +" damage.");
+            currentPoint = currentPoint == pointA ? pointB : pointA;
         }
     }
-}
 
+    void HandleFlip(float moveX)
+    {
+        if (moveX > 0 && !facingRight)
+            Flip();
+        else if (moveX < 0 && facingRight)
+            Flip();
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (pointA && pointB)
+            Gizmos.DrawLine(pointA.position, pointB.position);
+    }
+}
