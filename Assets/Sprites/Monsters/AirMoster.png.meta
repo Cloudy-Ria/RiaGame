@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: bed5740decc49f645803c36c7a3a24d6
+guid: 88e2053795237854a8b18420f8891bc7
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 9075407754075586683
-    second: SnowTiles_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,8 +71,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,199 +123,243 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SnowTiles_0
+      name: Amon_Dive_01
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 556
+        width: 489
+        height: 510
+      alignment: 9
+      pivot: {x: 0.49386504, y: 0.5372549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee41ff9f89b1cd74195cc7186daa78da
+      internalID: -155097299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amon_Dive_02
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b70408dc44352fd70800000000000000
-      internalID: 9075407754075586683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SnowTiles_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 512
+        width: 467
+        height: 549
+      alignment: 9
+      pivot: {x: 0.5085653, y: 0.49362478}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaba84e3eb5cdf240b8fa0fc47010358
-      internalID: 707991384
+      spriteID: 3a029597e23e7384da24dbce42a7b1d6
+      internalID: -990610244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d7790efba7b5214589c96d73f6f471f
-      internalID: 780410775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SnowTiles_3
+      name: Amon_DiveStart_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 1479
+        width: 512
+        height: 569
+      alignment: 9
+      pivot: {x: 0.3798828, y: 0.34446397}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8845bef33352f934db322456c1c0d8f7
-      internalID: -438475354
+      spriteID: cdf563929a5707342b78f2645bb9b992
+      internalID: 1337779042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_4
+      name: Amon_DiveStart_02
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 328
+        y: 1355
+        width: 460
+        height: 591
+      alignment: 9
+      pivot: {x: 0.4054348, y: 0.36379018}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 457aa106454025b4196b4a6e77b8acec
-      internalID: -1169033030
+      spriteID: 563f9eafe57588d4e96d8a2017aa552c
+      internalID: 2041401080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_5
+      name: Amon_Fly_01
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1634
+        y: 341
+        width: 414
+        height: 516
+      alignment: 9
+      pivot: {x: 0.44806764, y: 0.5135659}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2895561177e6cfc498b30bd961d69298
-      internalID: 804407574
+      spriteID: 40c35d5aa900cdf478ab3e3f4e4c726c
+      internalID: -1793121671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_6
+      name: Amon_Fly_02
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 502
+        height: 447
+      alignment: 9
+      pivot: {x: 0.40139443, y: 0.54362416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64eb0057aad91b945adfdc0a7a33d3d9
+      internalID: -545998438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amon_Fly_03
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 481
+        height: 527
+      alignment: 9
+      pivot: {x: 0.42099792, y: 0.55218214}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23fcdaab80b8df540b84cd99baf4c3fb
-      internalID: 837070473
+      spriteID: c38c67a027b78d84ea1a3b512a40f7be
+      internalID: 1698798218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_7
+      name: Amon_Fly_04
       rect:
         serializedVersion: 2
-        x: 64
+        x: 922
         y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 485
+        height: 476
+      alignment: 9
+      pivot: {x: 0.37216493, y: 0.63235295}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b99b92e675303b4c9d9e8bfcd9123f1
-      internalID: 1307914465
+      spriteID: e96d1bb3d73fba24e9f628ad3d6a9836
+      internalID: 1001101054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SnowTiles_8
+      name: Amon_Land_01
       rect:
         serializedVersion: 2
-        x: 128
+        x: 221
         y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 759
+        height: 213
+      alignment: 9
+      pivot: {x: 0.49341238, y: 1.3380282}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b759f39dd2b43347b2d13f0d5d5e989
-      internalID: -540154478
+      spriteID: 2834d127a4c031140bb73f49a7099160
+      internalID: -351767846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amon_Land_02
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1057
+        width: 732
+        height: 311
+      alignment: 9
+      pivot: {x: 0.49112022, y: 0.88102895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89d003c9dc74d04a8482bcda12470ad
+      internalID: 50082530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amon_Land_03
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 699
+        width: 498
+        height: 370
+      alignment: 9
+      pivot: {x: 0.45883533, y: 0.86756754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518fbe7628ca57d4f884d14bd7413a8c
+      internalID: 620970469
       vertices: []
       indices: 
       edges: []
@@ -327,7 +368,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 142dacb4474afac40bc950e38ec16013
+    spriteID: 7f4d95b4797068048986900edafb2cb3
     internalID: 0
     vertices: []
     indices: 
@@ -337,15 +378,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SnowTiles_0: 9075407754075586683
-      SnowTiles_1: 707991384
-      SnowTiles_2: 780410775
-      SnowTiles_3: -438475354
-      SnowTiles_4: -1169033030
-      SnowTiles_5: 804407574
-      SnowTiles_6: 837070473
-      SnowTiles_7: 1307914465
-      SnowTiles_8: -540154478
+      Amon_DiveStart_01: 1337779042
+      Amon_DiveStart_02: 2041401080
+      Amon_Dive_01: -155097299
+      Amon_Dive_02: -990610244
+      Amon_Fly_01: -1793121671
+      Amon_Fly_02: -545998438
+      Amon_Fly_03: 1698798218
+      Amon_Fly_04: 1001101054
+      Amon_Land_01: -351767846
+      Amon_Land_02: 50082530
+      Amon_Land_03: 620970469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

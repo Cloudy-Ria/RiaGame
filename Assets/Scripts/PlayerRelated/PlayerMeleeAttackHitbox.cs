@@ -1,4 +1,4 @@
-using Enemies;
+//using Enemies;
 using System.Threading;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class PlayerMeleeAttackHitbox : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Monster") && timer>cooldown)
         {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
             knockback(jumpHeight);
             timer = 0f;
         }
