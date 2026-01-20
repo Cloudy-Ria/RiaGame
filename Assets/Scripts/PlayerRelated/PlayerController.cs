@@ -96,16 +96,17 @@ public class PlayerController : MonoBehaviour
             }
         }
         //If the player is immovable (in a cutscene, dead, loading in, etc.)
-        if (moveable != 0)
+        if (moveable != 0 || IsBusy())
         {
             moveHor = 0;
             animator.SetBool("Walking", false);
             return;
         }
-
         //Movement
         moveHor = moveAction.ReadValue<Vector2>()[0];
         animator.SetBool("Walking", moveHor != 0);
+
+        
 
         //Jump
         if (bufferedJump < bufferedJumpMax && jumpAction.inProgress && IsGrounded() && !IsBusy() && jumpActionEnded == true)
