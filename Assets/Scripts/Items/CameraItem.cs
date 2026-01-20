@@ -9,6 +9,10 @@ public class CameraItem : MonoBehaviour
     private void Start()
     {
         gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        if (gameState.fixedRiaMemory)
+        {
+            gameObject.SetActive(false);
+        }
     }
     void Update()
     {
